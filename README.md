@@ -3,6 +3,9 @@
 ## 📌 About the Project
 **Edu-Spin** is an engaging educational web platform designed to make learning fun for underprivileged children, particularly children of rag pickers, through interactive games and activities. Built using **React and Node.js**, it provides an accessible, offline-friendly (PWA) learning experience with a gamified approach. The project focuses on teaching basic linguistic (reading, writing, and speaking) and arithmetic skills while addressing unique socio-economic challenges.
 
+### 🏠 Home Page
+![Edu-Spin Home Page](/Images/home.png)
+
 ## 🚀 Features
 - **Spin & Learn** 🎡 – Quick trivia-style game to reinforce knowledge.
 - **Draw & Learn** 🎨 – Interactive drawing board for creative learning.
@@ -47,12 +50,13 @@
 - **Problem Statement:** Gamifying Education for Underprivileged Children
 - **Tech Stack:** React, Node.js (as per hackathon rules)
 
+### 👨‍🏫 Hackathon Team Presenting to Teacher
+![Hackathon Team](/Images/hackathon.jpeg)
+
 ## 🤝 Contributors
 - **Gaurav** (Lead Developer) 🚀
-- Other team members (if any)
+- **Pratik and Serversh** (Documentation)
 
-## 📜 License
-This project is licensed under the **MIT License**.
 
 ---
 💡 *Empowering learning through fun and technology!* 🌟
