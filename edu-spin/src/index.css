@@ -1,0 +1,42 @@
+/* Global Styles */
+:root {
+  --background-color: rgb(230, 230, 230);
+  --button-bg: rgb(194, 231, 255);
+  --button-hover-bg: rgb(189, 228, 253);
+  --text-color: rgb(105, 105, 105);
+  --error-color: rgb(255, 70, 70);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--background-color);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--button-bg);
+  color: #333;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: var(--button-hover-bg);
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}

@@ -1,0 +1,138 @@
+/* Puzzle Container */
+.puzzle-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #b2ebf2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title & Description */
+h1 {
+  font-size: 2.5rem;
+  color: #2d3436;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Puzzle Grid */
+.puzzle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Puzzle Item */
+.puzzle-item {
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.puzzle-item.flipped .puzzle-inner {
+  transform: rotateY(180deg);
+}
+
+.puzzle-item.matched {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Puzzle Inner */
+.puzzle-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* Front & Back of Puzzle */
+.puzzle-front, .puzzle-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3436;
+  background-color: #ffcc80;
+  border-radius: 10px;
+}
+
+.puzzle-back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+}
+
+.puzzle-back img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .puzzle-grid {
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+  }
+
+  .puzzle-item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .puzzle-back img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .puzzle-grid {
+    grid-template-columns: repeat(2, 90px);
+    gap: 8px;
+  }
+
+  .puzzle-item {
+    width: 90px;
+    height: 90px;
+  }
+
+  .puzzle-back img {
+    width: 50px;
+    height: 50px;
+  }
+}

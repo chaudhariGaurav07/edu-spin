@@ -1,0 +1,192 @@
+/* Story Container */
+.story-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8e8a6;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5rem;
+  color: #4e342e;
+  margin-bottom: 20px;
+}
+
+/* Story Card */
+.story-card {
+  width: 90%;
+  max-width: 500px;
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Story Image */
+.story-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* Subtitle */
+h2 {
+  font-size: 1.8rem;
+  color: #6d4c41;
+}
+
+/* Description */
+p {
+  font-size: 1.2rem;
+  color: #4e342e;
+}
+
+/* Audio Button */
+.audio-btn {
+  background-color: #ff7043;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.audio-btn:hover {
+  background-color: #f4511e;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  margin-top: 15px;
+}
+
+.nav-buttons button {
+  background-color: #8d6e63;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.nav-buttons button:hover {
+  background-color: #6d4c41;
+}
+
+/* Responsive Design */
+
+/* Mobile (Portrait) */
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  .story-card {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .story-image {
+      width: 80px;
+      height: 80px;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  .audio-btn {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+  }
+
+  .nav-buttons button {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+  }
+}
+
+/* Tablet (Portrait) */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+      font-size: 2.2rem;
+  }
+
+  .story-card {
+      width: 90%;
+      padding: 18px;
+  }
+
+  .story-image {
+      width: 90px;
+      height: 90px;
+  }
+
+  h2 {
+      font-size: 1.7rem;
+  }
+
+  p {
+      font-size: 1.1rem;
+  }
+
+  .audio-btn {
+      padding: 9px 13px;
+      font-size: 0.95rem;
+  }
+
+  .nav-buttons button {
+      padding: 9px 13px;
+      font-size: 0.95rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  .story-card {
+      width: 500px;
+      padding: 20px;
+  }
+
+  .story-image {
+      width: 100px;
+      height: 100px;
+  }
+
+  h2 {
+      font-size: 1.8rem;
+  }
+
+  p {
+      font-size: 1.2rem;
+  }
+
+  .audio-btn {
+      padding: 10px 15px;
+      font-size: 1rem;
+  }
+
+  .nav-buttons button {
+      padding: 10px 15px;
+      font-size: 1rem;
+  }
+}

@@ -1,0 +1,46 @@
+.badges-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .badges-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .badge {
+    position: relative;
+    text-align: center;
+    width: 120px;
+    padding: 10px;
+  }
+  
+  .badge img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.4;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 8px;
+  }
+  
+  .badge.unlocked img {
+    opacity: 1;
+    border: 2px solid gold;
+    border-radius: 10px;
+  }
+  
+  .lock-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: red;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
